@@ -1,0 +1,174 @@
+.detailWrap{
+    padding-top:8px;
+}
+
+.backLink{
+    background:transparent;
+    border:none;
+    color:#000;
+    font-weight:600;
+    padding:10px 13px;
+    cursor:pointer;
+    margin-bottom:18px;
+    border-radius: 10px;
+    font-size: 14px;
+
+}
+
+.backLink:hover{
+    background:var(--accent);
+    color:aliceblue;
+
+}
+
+.backLink:focus{
+    outline:3px solid rgba(37,99,235,0.18);
+    outline-offset:2px;
+}
+
+.detailCard{
+    display:flex;
+    gap:32px;
+    align-items:flex-start;
+    background:transparent;
+    padding:0;
+}
+
+.left{
+    flex:0 0 520px;
+}
+
+.imageWrap{
+    background:#e7e9e970;
+    border-radius:12px;padding:
+    28px;display:flex;
+    align-items:center;
+    justify-content:center;
+    height:480px;
+    border: 1px solid #c2c2c240;
+}
+
+.image{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    border-radius:8px
+}
+
+.right{
+    flex:1;
+}
+
+.titleRow{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+}
+
+.title{
+    margin:0;
+    font-size:32px;
+    line-height:1.05
+}
+
+.stockPill{
+    margin-left:auto;
+    background:#f3f4f6;
+    padding:10px 14px;
+    border-radius:999px;
+    color:var(--muted);
+    font-weight:600;
+}
+
+.badges{
+    margin:12px 0;
+}
+
+.badge{
+    display:inline-block;
+    background:#f4f4f4;
+    border:1px solid #c2c2c2;
+    padding:6px 10px;border-radius:
+    999px;margin-right:8px;
+    color:#000;
+    font-size:13px;
+    font-weight: 600;
+}
+
+.ratingRow{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:8px 0;
+}
+
+.star{
+    color:#2b6cb0;
+    font-size:18px;
+}
+
+.rating{
+    color:var(--muted);
+}
+
+.priceRow{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:14px 0;
+}
+
+.price{
+    font-size:32px;
+    color:var(--accent);
+    font-weight:800;
+}
+
+.discount{
+    background:#ff4d4f;
+    color:#fff;
+    padding:6px 10px;
+    border-radius:999px;
+    font-weight:600;
+    font-size: 11px;
+}
+
+.sectionTitle{
+    margin-top:18px;
+    margin-bottom:8px
+}
+
+.description{
+    color:var(--muted);
+    line-height:1.6;
+}
+
+.addButton{
+    margin-top:18px;
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer
+}
+
+.addButton:focus{
+    outline:3px solid rgba(37,99,235,0.18);
+    outline-offset:2px
+}
+
+@media (max-width:1000px){
+  .left{flex:0 0 380px}
+  .imageWrap{height:380px}
+  .title{font-size:26px}
+}
+
+@media (max-width:700px){
+  .detailCard{flex-direction:column}
+  .left{flex:1}
+  .imageWrap{height:260px;padding:18px}
+  .title{font-size:20px}
+  .stockPill{margin-top:8px}
+}
