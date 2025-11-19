@@ -23,3 +23,6 @@ npm run preview
 
 Notes:
 - Uses only built-in fetch API and pure CSS. No external UI libraries.
+- Live demo
+---------
+You can view the live demo of this app deployed on Netlify at: [https://your-netlify-url.netlify.app](https://productlistinganddetailing.netlify.app/)
